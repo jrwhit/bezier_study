@@ -30,13 +30,9 @@ class _HomeState extends State<Home> {
     return Scaffold(
 
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            BezierWidget(),//classe do importe
-          ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: BezierWidget(),
         ),
       ),
     );
